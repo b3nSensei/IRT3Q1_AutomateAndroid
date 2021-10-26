@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".process.TabletSettingActivity">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="Connexion à l'Automate"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="489dp"
+        android:layout_gravity="center|center_vertical"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse IP:"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_gravity="left"/>
+
+
+        <EditText
+            android:id="@+id/edIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_textedit"
+            android:inputType="text"
+            android:maxLength="15"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rack"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_gravity="left"/>
+
+        <EditText
+            android:id="@+id/edRack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_textedit"
+            android:inputType="numberSigned"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slot"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_gravity="left"/>
+
+        <EditText
+            android:id="@+id/edSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_textedit"
+            android:inputType="numberSigned"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@color/black" />
+
+        <Button
+            android:id="@+id/btnApiCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/white_button"
+            android:text="Se connecter" />
+
+    </LinearLayout>
+
+</LinearLayout>

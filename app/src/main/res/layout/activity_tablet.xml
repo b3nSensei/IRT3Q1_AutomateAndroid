@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    android:paddingHorizontal="30dp"
+    android:orientation="vertical"
+    tools:context=".process.LevelControlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:text="Tablettes de comprimés"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_tp_bottles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Bouteilles remplies: "
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tp_pilldemand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Comprimés demandés: "
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tp_inoperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="En service: "
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_tp_bandmotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Moteur de bande: "
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btnModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/white_button"
+        android:padding="15dp"
+        android:text="Modifier Valeur"
+        android:layout_gravity="center"/>
+
+    <GridLayout
+        android:id="@+id/gridWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="DBB5"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="DBB6"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="DBB7"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="DBB8"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="DBB18"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_writeValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_textedit"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/black"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:inputType="numberSigned"/>
+
+                <Button
+                    android:id="@+id/bt_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_button"
+                    android:text="Envoi" />
+
+            </LinearLayout>
+
+        </RadioGroup>
+
+    </GridLayout>
+
+</LinearLayout>

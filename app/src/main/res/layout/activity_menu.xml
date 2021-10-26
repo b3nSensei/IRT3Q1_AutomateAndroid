@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    tools:context=".MenuActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorSecondary">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_automates"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="Automates disponible: "
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:gravity="left"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_tablet_packaging"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/white_button"
+            android:text="Tablettes de Comprimées" />
+
+        <Button
+            android:id="@+id/btn_level_control"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/white_button"
+            android:text="Niveaux de liquides" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_management"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_management"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="Gestion: "
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:gravity="left"
+        android:layout_marginTop="20dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_users"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/white_button"
+            android:text="Utilisateurs" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/btn_log_out"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/red_button"
+        android:padding="10dp"
+        android:text="Deconnexion" />
+
+
+</LinearLayout>

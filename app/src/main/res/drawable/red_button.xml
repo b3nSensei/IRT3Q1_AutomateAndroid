@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!-- Définission de la couleur du border_textedit et de la taille -->
+    <stroke
+        android:color="@color/colorPrimary"
+        android:width="4dp"/>
+    <!-- Définission de la couleur du fond des case -->
+    <solid
+        android:color="@color/colorSecondaryDark"
+        />
+    <!-- Définission des bords rond des cases -->
+    <corners android:radius="25dp"/>
+</shape>

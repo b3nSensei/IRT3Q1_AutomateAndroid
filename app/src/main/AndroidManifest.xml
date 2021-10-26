@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.heh.pfa_pittonet_benjamin">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pfa_pittonet_benjamin">
+
+        <activity android:name=".AdminSignUp" />
+        <activity android:name=".UserSignUp" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".UserList" />
+        <activity android:name=".UserDetails" />
+        <activity android:name=".process.LevelControlActivity" />
+        <activity android:name=".process.TabletPackagingActivity" />
+        <activity android:name=".process.TabletSettingActivity" />
+        <activity android:name=".process.LevelSettingActivity" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
